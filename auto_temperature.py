@@ -2,15 +2,16 @@
 # Author：quzard
 from Tui import *
 from selenium import webdriver
-
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--disable-gpu')
-chrome_options.add_argument('--no-sandbox')
+import random
 import time
 import datetime
 import os
 import sys
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-gpu')
+chrome_options.add_argument('--no-sandbox')
+
 
 def main():
     global t
@@ -122,7 +123,7 @@ if __name__ == '__main__':
     else:
         serverchan_sckey = ""
 
-    
+    time.sleep(random.randint(0, 300))
     
     
     error = False
