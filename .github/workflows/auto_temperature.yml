@@ -1,0 +1,31 @@
+name: SEU Auto Temperature
+on:
+  schedule:
+    - cron: '30 07 * * *'
+  watch:
+    types: started
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+  Temperature:
+    runs-on: ubuntu-18.04
+    if: github.event.repository.owner.id == github.event.sender.id
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+    - name: Run
+      env:
+        TZ: Asia/Shanghai
+        ID: ${{ secrets.ID }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        NAME: ${{ secrets.NAME }}
+        KU: ${{ secrets.KU }}
+        SERVERCHAN: ${{ secrets.SERVERCHAN }}
+      run: |
+        bash Init_Building_Dependencies.sh
+        python3 auto_temperature.py
