@@ -6,7 +6,7 @@
 
 支持定时上报以及start上报（star一下自己fork后的项目就会启动上报action）
 
-**fork后记得添加变量，并去action那启用一下。可以star一下自己fork后的项目测试action是否可以正常启动**
+**fork后记得添加变量，并去Actions那Enable一下。可以star一下自己fork后的项目测试action是否可以正常启动**
 
 如有使用问题，请发issue![issue](/img/4.png)
 
