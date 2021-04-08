@@ -14,7 +14,7 @@
 
 Ⅰ. **首先 fork 本项目到自己的仓库**![fork](/img/1.png)
 
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `去Actions那Enable Workflow5`
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `去Actions那Enable Workflow`
 
 
 Ⅱ. **进入自己 fork 的仓库，点击 Settings-> Secrets-> New repository secret，它们将作为配置项，在应用启动时传入程序。**
