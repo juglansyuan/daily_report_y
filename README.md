@@ -6,13 +6,16 @@
 
 支持定时上报以及start上报（star一下自己fork后的项目就会启动上报action）
 
-**fork后记得添加变量，并去Actions那Enable一下。可以star一下自己fork后的项目测试action是否可以正常启动**
+**fork后记得添加变量，并去Actions那Enable Workflow。可以star一下自己fork后的项目测试action是否可以正常启动**
 
 如有使用问题，请发issue![issue](/img/4.png)
 
 ## 使用步骤
 
 Ⅰ. **首先 fork 本项目到自己的仓库**![fork](/img/1.png)
+
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `去Actions那Enable Workflow5`
+
 
 Ⅱ. **进入自己 fork 的仓库，点击 Settings-> Secrets-> New repository secret，它们将作为配置项，在应用启动时传入程序。**
 
@@ -34,6 +37,7 @@
 
 Ⅲ. **如果需要修改上报时间，修改.github/workflows/auto_temperature.yml**
 ![cron](/img/3.png)
+
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/Quzard/SEU_Action_Report.svg)](https://starchart.cc/Quzard/SEU_Action_Report)
