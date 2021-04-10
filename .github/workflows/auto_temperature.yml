@@ -6,8 +6,6 @@ on:
     # 可在此网站查询UTC时间和北京时间的换算关系 https://datetime360.com/cn/utc-beijing-time/
   watch:
     types: started
-  repository_dispatch:
-  workflow_dispatch:
 
 jobs:
   Temperature:
